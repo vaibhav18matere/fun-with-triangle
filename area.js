@@ -1,0 +1,18 @@
+console.log("start !!!!");
+
+const inputs = document.querySelectorAll(".length-input");
+const areaBtn = document.querySelector("#area-button");
+const output = document.querySelector("#output");
+
+calculateAreaOfTriangle = (base, height) => {
+    const area = 1 / 2 * (base * height);
+    return area;
+}
+
+calculateArea = () => {
+    const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));
+
+    output.innerHTML = "Area of Triangle is " + (area).toFixed(2);
+}
+
+areaBtn.addEventListener("click", calculateArea)
