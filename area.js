@@ -12,7 +12,9 @@ calculateAreaOfTriangle = (base, height) => {
 calculateArea = () => {
     const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));
 
-    output.innerHTML = "Area of Triangle is " + (area).toFixed(2);
+    output.innerHTML = "Area of Triangle is " + (area).toFixed(2) + "  cm²";
 }
 
 areaBtn.addEventListener("click", calculateArea)
+
+
