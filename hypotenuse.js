@@ -11,8 +11,11 @@ calculateSumOfSquares = (side1, side2) => {
 
 calculateHypotenuse = () => {
 
-    const sumOfSquares = calculateSumOfSquares(2, 8);
-    console.log(sumOfSquares);
+    const sumOfSquares = calculateSumOfSquares(Number(inputSides[0].value), Number(inputSides[1].value));
+
+    const lengthOfHypotenuse = Math.sqrt(sumOfSquares);
+
+    outputValue.innerHTML = "Length of hypotenuse is " + (Math.round(lengthOfHypotenuse * 100) / 100).toFixed(2);
 }
 
 hypotenuseBtn.addEventListener("click", calculateHypotenuse)
