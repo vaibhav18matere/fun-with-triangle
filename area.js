@@ -17,4 +17,3 @@ calculateArea = () => {
 
 areaBtn.addEventListener("click", calculateArea)
 
-
