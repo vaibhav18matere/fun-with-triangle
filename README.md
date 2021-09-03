@@ -1,5 +1,5 @@
 # fun-with-triangle
-Do you know your triangles?
-mark 12
+Triangle quiz app
 
-
+you can check the app here :
+https://triangle-quiz-web-app.netlify.app/
