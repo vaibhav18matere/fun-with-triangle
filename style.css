@@ -86,7 +86,7 @@ footer p {
 a, img, li{
     display: inline;
     color: var(--primary-color);
-    margin: 0.2rem;
+    margin: 0.25rem;
 }
   
 img {
