@@ -30,4 +30,41 @@
     padding: 0 1rem;
   }
   
+  header h1 {
+    text-align: initial;
+  }
+  
+  nav {
+    text-align: right;
+  }
+  
+  nav > a {
+    padding: 0 1rem;
+  }
+  main {
+    margin: 0 0 7rem;
+  }
+  
+  main h1 {
+    margin: 1rem;
+  }
+  
+/* to remove arrows in input box */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
 
+  button{
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: 1rem auto;
+    display: block;
+  }
