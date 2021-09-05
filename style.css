@@ -48,7 +48,7 @@
   main h1 {
     margin: 1rem;
   }
-  
+
 /* to remove arrows in input box */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -68,3 +68,30 @@ margin: 0;
     margin: 1rem auto;
     display: block;
   }
+
+#output {
+    font-size: x-large;
+    margin: 1rem;
+  }
+  
+footer p {
+    font-size: large;
+    text-align: center;
+  }
+  
+.footer-list {
+    margin: 1rem;
+  }
+  
+a, img, li{
+    display: inline;
+    color: var(--primary-color);
+    margin: 0.2rem;
+}
+  
+img {
+    width: 40px;
+    padding: 1rem 0.2rem;
+}  
+
+
