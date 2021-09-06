@@ -7,12 +7,13 @@
   }
   
   :root {
-    --primary-color: #3a25d3;
+    --primary-color: #8fe9b6;
   }
   
   body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    background: #dfdfdf;
   }
 
   a {
@@ -26,10 +27,29 @@
   nav {
     text-align: right;
   }
-  nav > a {
-    padding: 0 1rem;
+ 
+  .header{
+    box-shadow: 2px 2px 8px 5px #a1aec6;
+    border-radius: 1rem;
+    background: #8fe9b6;
+    color: #0e0f0f;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
   }
-  
+  .header nav a{
+    background: #84bdce;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 8px 24px;
+    font-size: 16px;
+  }
+  .header nav a:hover{
+    background: #5da3b8;
+  }
+  .form_box{
+
+  }
+
   header h1 {
     text-align: initial;
   }
@@ -43,7 +63,30 @@
   }
   main {
     margin: 0 0 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+  .form_box{
+    display: flex;
+  }
+  .form_input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .form_input label{
+    position: absolute;
+    top: 5px;
+  }
+  .form_input input{
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+ 
   
   main h1 {
     margin: 1rem;
