@@ -8,6 +8,7 @@
   
   :root {
     --primary-color: #8fe9b6;
+    --secondary-color:#a1aec6;
   }
   
   body {
@@ -31,7 +32,7 @@
   .header{
     box-shadow: 2px 2px 8px 5px #a1aec6;
     border-radius: 1rem;
-    background: #8fe9b6;
+    background:var(--primary-color);
     color: #0e0f0f;
     letter-spacing: 0.5px;
     font-weight: bolder;
@@ -39,7 +40,7 @@
   .header nav a{
     background: #84bdce;
     border-radius: 5px;
-    color: rgb(255, 255, 255);
+    color: black;
     padding: 8px 24px;
     font-size: 16px;
   }
@@ -94,6 +95,7 @@
   h3{
     text-align: center;
   }
+  
 /* to remove arrows in input box */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -102,14 +104,14 @@ margin: 0;
 }
 
   button{
-    background: var(--primary-color);
+    background-color:var(--primary-color);
     border: none;
-    color: #fff;
+    color: black;
     padding: 0.7rem 1rem;
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: #fff;
+    outline: white;
     margin: 1rem auto;
     display: block;
   }
