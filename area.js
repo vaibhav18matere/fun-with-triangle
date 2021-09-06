@@ -10,9 +10,16 @@ calculateAreaOfTriangle = (base, height) => {
 }
 
 calculateArea = () => {
-    const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));
+    if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {        // checks the greater than zero value
+        return output.innerHTML = "Please enter valid data";
+    }
+    if (!Number(inputs[0].value) || !Number(inputs[1].value)) {    //checks empty i/p box
+        output.innerHTML = "Please enter valid data";
+    } else {
+        const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));
+        output.innerHTML = "Area of Triangle is " + (area).toFixed(2) + "  cm²";
 
-    output.innerHTML = "Area of Triangle is " + (area).toFixed(2) + "  cm²";
+    }
 }
 
 areaBtn.addEventListener("click", calculateArea)
