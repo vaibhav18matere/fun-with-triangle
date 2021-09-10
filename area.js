@@ -1,5 +1,3 @@
-console.log("start !!!!");
-
 const inputs = document.querySelectorAll(".length-input");
 const areaBtn = document.querySelector("#area-button");
 const output = document.querySelector("#output");
@@ -10,11 +8,12 @@ calculateAreaOfTriangle = (base, height) => {
 }
 
 calculateArea = () => {
-    if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {        // checks the greater than zero value
-        return output.innerHTML = "Please enter valid data";
+    if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {
+        return output.innerHTML = "Please enter valid inputs";
     }
-    if (!Number(inputs[0].value) || !Number(inputs[1].value)) {    //checks empty i/p box
-        output.innerHTML = "Please enter valid data";
+    if (!Number(inputs[0].value) || !Number(inputs[1].value)) {    //checks for empty i/p box
+        output.innerHTML = "Please enter both the inputs";
+
     } else {
         const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));
         output.innerHTML = "Area of Triangle is " + (area).toFixed(2) + "  cm²";
