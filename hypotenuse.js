@@ -9,7 +9,7 @@ calculateSumOfSquares = (side1, side2) => {
 
 calculateHypotenuse = () => {
 
-    if (Number(inputSides[0].value) < 0 || Number(inputSides[1].value) < 0) {
+    if (Number(inputSides[0].value) <= 0 || Number(inputSides[1].value) <= 0) {
         return outputValue.innerHTML = "Please enter valid inputs";
 
     } if (Number(!inputSides[0].value) || Number(!inputSides[1].value)) {

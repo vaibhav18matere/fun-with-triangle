@@ -8,7 +8,7 @@ calculateAreaOfTriangle = (base, height) => {
 }
 
 calculateArea = () => {
-    if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {
+    if (Number(inputs[0].value) <= 0 || Number(inputs[1].value) <= 0) {
         return output.innerHTML = "Please enter valid inputs";
     }
     if (!Number(inputs[0].value) || !Number(inputs[1].value)) {
