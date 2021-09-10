@@ -103,7 +103,11 @@ input::-webkit-inner-spin-button {
 margin: 0;
 }
 
-  button{
+.question-container{
+  margin: 1rem;
+}
+
+button{
     background-color:var(--primary-color);
     border: none;
     color: black;
@@ -114,7 +118,7 @@ margin: 0;
     outline: white;
     margin: 1rem auto;
     display: block;
-  }
+}
 
 #output {
     font-size: x-large;

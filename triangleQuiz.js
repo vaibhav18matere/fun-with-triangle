@@ -4,7 +4,7 @@ const quizForm = document.querySelector(".quiz-form");
 const submitAnswerBtn = document.querySelector("#submit-answer-btn");
 const output = document.querySelector("#output");
 
-const correctAnswer = ["90°", "Right angled", "Midsegment"];
+const correctAnswer = ["90°", "Right angled", "Midsegment", "Isosceles triangle"];
 
 function calculateScore() {
     let score = 0;
