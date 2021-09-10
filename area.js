@@ -11,8 +11,8 @@ calculateArea = () => {
     if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {
         return output.innerHTML = "Please enter valid inputs";
     }
-    if (!Number(inputs[0].value) || !Number(inputs[1].value)) {    //checks for empty i/p box
-        output.innerHTML = "Please enter both the inputs";
+    if (!Number(inputs[0].value) || !Number(inputs[1].value)) {
+        return output.innerHTML = "Please enter both the inputs";
 
     } else {
         const area = calculateAreaOfTriangle(Number(inputs[0].value), Number(inputs[1].value));

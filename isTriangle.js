@@ -8,15 +8,26 @@ calculateSumOfAngles = (angle1, angle2, angle3) => {
 }
 
 isTriangle = () => {
+
     const sumOfAngles = calculateSumOfAngles(Number(inputs[0].value), Number(inputs[1].value), Number(inputs[2].value));
 
-    if (sumOfAngles === 180) {
-        output.innerHTML = ("Angles form a Triangle !")
-
-    } else {
-        output.innerHTML = ("Angles not form a triangle...")
+    if (Number(inputs[0].value) < 0 || Number(inputs[1].value) < 0) {
+        return output.innerHTML = "Please enter valid inputs";
     }
 
+    if (!Number(inputs[0].value) || !Number(inputs[1].value) || !Number(inputs[2].value)) {
+        //checks for empty i/p given
+        return output.innerHTML = "Please enter all the inputs";
+    } else {
+
+        if (sumOfAngles === 180) {
+            output.innerHTML = ("Angles form a Triangle !")
+
+        } else {
+            output.innerHTML = ("Angles not form a triangle")
+        }
+
+    }
 }
 
-isTriangleBtn.addEventListener("click", isTriangle)
+isTriangleBtn.addEventListener("click", isTriangle);
