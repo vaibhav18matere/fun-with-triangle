@@ -1,5 +1,3 @@
-console.log("Let's go!");
-
 const quizForm = document.querySelector(".quiz-form");
 const submitAnswerBtn = document.querySelector("#submit-answer-btn");
 const output = document.querySelector("#output");
