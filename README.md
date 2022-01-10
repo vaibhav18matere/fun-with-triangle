@@ -1,5 +1,5 @@
-# fun-with-triangle
-Triangle quiz app
+# Fun with triangle
 
-you can check the app here :
-https://triangle-quiz-web-app.netlify.app/
+- Technology used : HTML, CSS and Vanilla Javascript
+
+- You can check the live app here : https://triangle-quiz-web-app.netlify.app
