@@ -2,12 +2,12 @@ const inputSides = document.querySelectorAll(".input-side");
 const hypotenuseBtn = document.querySelector("#hypotenuse-button");
 const outputValue = document.querySelector("#output");
 
-calculateSumOfSquares = (side1, side2) => {
+const calculateSumOfSquares = (side1, side2) => {
     const sumOfSquares = side1 ** 2 + side2 ** 2;
     return sumOfSquares;
 }
 
-calculateHypotenuse = () => {
+const calculateHypotenuse = () => {
 
     if (Number(inputSides[0].value) <= 0 || Number(inputSides[1].value) <= 0) {
         return outputValue.innerHTML = "Please enter valid inputs";
